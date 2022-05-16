@@ -1,0 +1,80 @@
+textarea {
+    top: 130px;
+    right: 30px;
+    width: 300px;
+}
+
+.teclado {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+    background: #004134;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    /* A propriedade abaixo é para fazer com que o elemento não seja selecionável */
+    user-select: none;
+    transition: bottom 0.5s;
+}
+
+.esconde--teclado {
+    bottom: -100%;
+}
+
+.teclado__botoes {
+    text-align: center;
+}
+
+.teclado__botao {
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.teclado__botao:active {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.botao__especial {
+    width: 12%;
+}
+
+.botao__extra__largo{
+    width: 36%;
+    max-width: 500px;
+}
+
+.botao__capslock:after {
+    content: '';
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.botao__capslock--ativo:after {
+    background: #08ff00;
+}
+
+.botao__check {
+    background: rgba(0, 0, 0, 0.25);
+}
+
